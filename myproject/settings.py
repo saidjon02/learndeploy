@@ -24,7 +24,7 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 SECRET_KEY = os.getenv("SECRET_KEY", "fallback-key")
 
 # Hostlar
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1").split(",")
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1", "web-production-aa3b0.up.railway.app").split(",")
 
 # Static files
 STATIC_URL = '/static/'
